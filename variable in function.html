@@ -1,0 +1,21 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h3>SCPE OF VARIABLE INSIDE THE FUNCTION</h3>
+       <button type="'button" onclick="myfunction()">CLICK ME !</button>
+       <P id="demo">THIS IS DEMO</P>
+       <P id="demo1"></P>
+
+       <script>
+        var b=5;        //global variable
+        function myfunction(){
+            var a = 10 ;      //local variable
+             document.getElementById("demo").innerHTML="THIS IS A DEMO" +a*b;
+        }
+        document.getElementById("demo1").innerHTML="THIS IS A DEMO1"+b;
+        document.getElementById("demo1").innerHTML="THIS IS A DEMO1"+a;
+       </script>
+    </body>
+</html>
